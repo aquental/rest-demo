@@ -22,7 +22,7 @@ Para rodar este programa vc precisa:
 ## Preparando o ambiente (Ubuntu)
 `$ sudo apt-get install python`
 
-`$ sufo apt-get install pip`
+`$ sudo apt-get install python-pip python-dev build-essential`
 
 `$ sudo apt-get install virtualenv`
 
@@ -31,6 +31,8 @@ Para rodar este programa vc precisa:
 `$ virtualenv flask`
 
 `$ flask/bin/pip install flask`
+
+`$ flask/bin/pip install flask-httpauth`
 
 `$ chmod a+x demo-flask.py`
 
@@ -48,7 +50,7 @@ $ * Debugger pin code: 203-638-325
 
 
 ## Rodando o teste
-`$ curl -u cliente:s3nh@ -H "Content-Type: application/json" -X -i POST -d '{ "a":4, "b":"3"}' http://localhost:5000/demo/api/v1.0/soma` - chama a api REST
+`$ curl -u cliente:s3nh@ -H "Content-Type: application/json" í -X POST -d '{ "a":4, "b":"3"}' http://localhost:5000/demo/api/v1.0/soma` - chama a api REST
 
 ## Resultado esperado
 `$HTTP/1.0 200 OK`
